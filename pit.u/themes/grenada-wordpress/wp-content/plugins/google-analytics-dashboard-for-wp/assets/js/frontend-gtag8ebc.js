@@ -204,7 +204,7 @@ var ExactMetrics = function () {
     extension = extension.substring(0, (
       extension.indexOf("?") == -1
     ) ? extension.length : extension.indexOf("?")); /* Remove the query after the file name, if there is one */
-    extension = extension.substring(extension.lastIndexOf("http://clapat.ro/") + 1, extension.length); /* Remove everything before the last slash in the path */
+    extension = extension.substring(extension.lastIndexOf("http://pit.u/") + 1, extension.length); /* Remove everything before the last slash in the path */
     if (extension.length > 0 && extension.indexOf('.') !== -1) { /* If there's a period left in the URL, then there's a extension. Else it is not a extension. */
       extension = extension.substring(extension.lastIndexOf(".") + 1); /* Remove everything but what's after the first period */
       return extension;
